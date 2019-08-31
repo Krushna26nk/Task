@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+//          --------------  >         sidenav
+
+.sidenavContainer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+.sidenav{
+    width: 258px;
+    background: #353c48;
+}
+.sidenavList{
+    color: white;
+    font-size: 13px;
+    width: 100%;
+}
+.avatar{
+    background: url('../../../assets/images/ms.jpg');
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+}
+.userHeading{
+    color: whitesmoke;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+
+.matListItem{
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.matListItem:hover{
+    background:rgba(0, 0, 0, 0.2) ;
+    color: #5783c7;
+    border-radius: 20px;
+}
+
+.headImage{
+    background: url('http://www.radixtouch.in/templates/admin/lorax/source/light/assets/images/logo.png');
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.toolbar{
+    background: #353c48;
+    color: white;
+    letter-spacing: 2px
+}
+
+.arrowIcon{
+    transition-duration: 1s;
+}
+.menuIcon{
+    transition-duration: 1s;
+}
+.sidenavContent{
+    background: rgba($color: #424e64, $alpha: 0.8)
+}
+.services{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.services :nth-child(odd){
+    color: #f6699c;
+}
+.services :nth-child(even){
+    color: #7f55fc;
+}
+// --------  >>>>>>>> listing
