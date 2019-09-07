@@ -12,7 +12,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { MatSidenavModule, MatToolbarModule, MatCardModule, MatButtonModule, MatInputModule, MatListModule, MatIconModule } from '@angular/material';
 
 const routes:Routes =[
-  { path:'', component: MainComponent}
+  { path:'', component: GitComponent}
 ]
 
 @NgModule({
