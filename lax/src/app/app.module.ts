@@ -10,16 +10,20 @@ import { MainComponent } from './components/main/main.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 import { MatSidenavModule, MatToolbarModule, MatCardModule, MatButtonModule, MatInputModule, MatListModule, MatIconModule } from '@angular/material';
+import { GitcommandsComponent } from './components/gitcommands/gitcommands.component';
 
 const routes:Routes =[
-  { path:'', component: GitComponent}
+  { path:'', component: GitComponent, children: [
+    {path:'',component:GitcommandsComponent}
+  ]}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     GitComponent,
-    MainComponent
+    MainComponent,
+    GitcommandsComponent
   ],
   imports: [
     BrowserModule,BrowserAnimationsModule,RouterModule.forRoot(routes),FlexLayoutModule,

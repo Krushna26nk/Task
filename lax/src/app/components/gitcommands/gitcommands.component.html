@@ -1,0 +1,51 @@
+<div class="container">
+  <ol>
+    <li style="margin-top: 3%">
+        <div class="container" style="">
+          <h5 style="color: #F22F08;text-transform: uppercase;letter-spacing: 1px;font-weight: 100;opacity: 0.9;">Basic GIT Commands</h5>
+          <div class="container" fxLayout="row wrap">
+            <mat-card *ngFor="let item of basicGit" style="box-shadow: 1px 1px 6px;margin: 1%;width: 30%;word-break: break-all;word-wrap:break-word;" >
+              <p style="color: #0486DB;font-size: 1.3rem;letter-spacing: 2px"> {{item.command}} </p>
+              <p style="color: #6C6B74;font-size: 1.1rem;letter-spacing: 1px"> {{item.description}} </p>
+            </mat-card>
+          </div>
+        </div>
+    </li>
+
+    <li style="margin-top: 3%">
+        <div class="container">
+            <h5 style="color: #F22F08;text-transform: uppercase;letter-spacing: 1px;font-weight: 100;opacity: 0.9;"> GIT Branching Commands</h5>
+            <div class="container" fxLayout="row wrap">
+              <mat-card *ngFor="let item of branchCommands" style="box-shadow: 1px 1px 6px;margin: 1%;width: 30%;word-break: break-all;word-wrap:break-word;" >
+                <p style="color: #0486DB;font-size: 1.3rem;letter-spacing: 2px"> {{item.command}} </p>
+                <p style="color: #6C6B74;font-size: 1.1rem;letter-spacing: 1px"> {{item.description}} </p>
+              </mat-card>
+            </div>
+        </div>
+    </li>
+
+    <li style="margin-top: 3%">
+        <div class="container">
+            <h5 style="color: #F22F08;text-transform: uppercase;letter-spacing: 1px;font-weight: 100;opacity: 0.9;"> GIT Log Commands</h5>
+            <div class="container" fxLayout="row wrap">
+              <mat-card *ngFor="let item of gitLog" style="box-shadow: 1px 1px 6px;margin: 1%;width: 30%;word-break: break-all;word-wrap:break-word;" >
+                <p style="color: #0486DB;font-size: 1.3rem;letter-spacing: 2px"> {{item.command}} </p>
+                <p style="color: #6C6B74;font-size: 1.1rem;letter-spacing: 1px"> {{item.description}} </p>
+              </mat-card>
+            </div>
+        </div>
+    </li>
+
+    <li style="margin-top: 3%">
+        <div class="container">
+            <h5 style="color: #F22F08;text-transform: uppercase;letter-spacing: 1px;font-weight: 100;opacity: 0.9;"> GIT replace (checkout) Commands</h5>
+            <div class="container" fxLayout="row wrap">
+              <mat-card *ngFor="let item of replaceGit" style="box-shadow: 1px 1px 6px;margin: 1%;width: 30%;word-break: break-all;word-wrap:break-word;" >
+                <p style="color: #0486DB;font-size: 1.3rem;letter-spacing: 2px"> {{item.command}} </p>
+                <p style="color: #6C6B74;font-size: 1.1rem;letter-spacing: 1px"> {{item.description}} </p>
+              </mat-card>
+            </div>
+        </div>
+    </li>
+  </ol>
+</div>

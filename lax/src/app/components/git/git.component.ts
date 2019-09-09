@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { MediaMatcher } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-git',
@@ -7,8 +8,15 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./git.component.scss']
 })
 export class GitComponent implements OnInit {
+  mobileQuery : MediaQueryList;
+  private _mobileQueryListener: () => void;
 
-  constructor( private http:HttpClient) { }
+  constructor( private http:HttpClient, private changeDetector: ChangeDetectorRef,private media: MediaMatcher) { 
+    this.mobileQuery = this.media.matchMedia('(max-width:600px)');
+    this._mobileQueryListener =() =>
+      changeDetector.detectChanges();
+      this.mobileQuery.addListener(this._mobileQueryListener);
+   }
 
   branchCommands: any;
   basicGit: any;

@@ -1,6 +1,4 @@
-*{
-    background: rgba(0, 0, 0, 0)
-}
+
 .navbar{
     box-shadow: 2px 1px 5px;
 }
@@ -18,7 +16,7 @@
     position: absolute;
     bottom: -0.5rem;
     left: 50%;
-    transform: translateX(-50%)    
+    transform: translateX(-50%);  
 }
 .img-rounded{
     height: 3rem;
@@ -34,7 +32,7 @@
     // margin-right: 5%;
     border-radius: 5px;
     letter-spacing: 2px;
-    color: aliceblue;
+    color: #16235A;
     box-shadow: 0px 1px 1px rgb(201, 133, 133);
     font-weight: 100;
 }
@@ -43,16 +41,53 @@
     text-decoration: none;
     border: none;
     text-align: center;
-    color: rgb(182, 171, 167);
+    color: rgb(59, 44, 39);
     letter-spacing: 2px;
     font-family: 'Courier New', Courier, monospace;
 }
 .list-group li:hover{
-    background: rgba(83, 80, 80, 0.3);
+    background: rgba(48, 46, 46, 0.5);
 }
 .lion{
     height: 5rem;
 }
 .list-group li.active{
     background: gray
+}
+
+.matCards{
+    width: 20%;border-radius: 5px;margin: 1%;background-color: rgba(255, 228, 196,0.5);word-break: break-all;word-wrap: break-word;
+}
+
+.coverHeading{
+    color: #0438A3;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.coverDescription{
+    color: #C0334D;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+@media screen and (max-width : 992px){
+    .matCards{
+        width: 40%;
+    }
+}
+@media screen and (max-width : 768px){
+    .matCards{
+        width: 50%;
+    }
+}
+@media screen and (max-width : 500px){
+    .matCards{
+        width: 80%;
+    }
 }
