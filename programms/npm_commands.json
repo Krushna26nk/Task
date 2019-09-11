@@ -1,0 +1,58 @@
+[
+    {
+        "command":"npm adduser",
+        "description":"to add user account"
+    },
+    {
+        "command":"npm install",
+        "description":"to install the packages"
+    },
+    {
+        "command":"npm init",
+        "description":"to create package.json file"
+    },
+    {
+        "command":"npm cache",
+        "description":"To manipulate the packages cache"
+    },
+    {
+        "command":"npm doctor",
+        "description":"to check the environment"
+    },
+    {
+        "command":"npm edit",
+        "description":"to edit the installed packages"
+    },
+    {
+        "command":"npm install-test",
+        "description":"to install packages and run the test"
+    },
+    {
+        "command":"npm owner",
+        "description":"Manage package owner. "
+    },
+    {
+        "command":"npm root",
+        "description":"Displays root of npm"
+    },
+    {
+        "command":"npm uninstall",
+        "description":"to uninstall packages"
+    },
+    {
+        "command":"npm test",
+        "description":"to test the package"
+    },
+    {
+        "command":"npm update",
+        "description":"to update the package"
+    },
+    {
+        "command":"npm version",
+        "description":"to check the npm version"
+    },
+    {
+        "command":"npm help",
+        "description":"to get the help on npm "
+    }
+]

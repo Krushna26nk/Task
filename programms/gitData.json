@@ -1,0 +1,85 @@
+{
+    "git_commands" : [
+      {
+        "command" : " git init",
+        "description" : "For Creating New Repository"
+      },
+      {
+        "command" : "git clone /path/to/repository",
+        "description" : "to add copy of working directory"
+      },
+      {
+        "command" : "git add * ",
+        "description" : "to add all files to the Repository"
+      },
+      {
+        "command" : "git clone /path/to/repository",
+        "description" : "to add copy of working directory"
+      },
+      {
+        "command" : "git commit -m change message",
+        "description" : "now your file is to head but not to repository ( stagging area)"
+      },
+      {
+        "command" : "git push origin master",
+        "description" : "to add your all data to the repository."
+      },
+      {
+        "command" : "git add origin <server - name>",
+        "description" : "to add copy of working directory"
+      }
+    ],
+
+    "branching_commands" : [
+      {
+        "command" : "git checkout -b < BranchName >",
+        "description" : "For Creating Branches and switch to it as working ."
+      },
+      {
+        "command" : "git branch -d < BranchName >",
+        "description" : "For Deleting the Branch ."
+      },
+      {
+        "command" : "git checkout master",
+        "description" : "For Switching Back to the Master."
+      },
+      {
+        "command" : "git push origin < BranchName >",
+        "description" : "For Pushing the Branch Changes ."
+      },
+      {
+        "command" : "git pull",
+        "description" : "For Updating your local repository with the commit changes ."
+      },
+      {
+        "command" : "git merge < BranchName >",
+        "description" : "to merge another branch into active branch."
+      }
+    ],
+
+  "log_commands" : [
+    {
+      "command": "git log --author = < author_name >",
+      "description": "to check the commits of particular author."
+    },
+    {
+      "command": "git log --pretty = oneline",
+      "description": "to see compressed log where each commit is one line."
+    },
+    {
+      "command": "git log --help",
+      "description": "to see other parameters of log ."
+    }
+  ],
+
+  "replace_commands" :[
+    {
+      "command" : "git checkout --< filename >",
+      "description" : "this replaces the changes in your working tree with the latest commit."
+    },
+    {
+      "command" : " git fetch origin     and then   =>  git reset --hard origin/master ",
+      "description" : "if we want to drop all the changes and commits."
+    }
+  ]
+}
