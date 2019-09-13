@@ -1,11 +1,33 @@
-let car = {
-    hornMessage: "Beep! Beep!",
-    soundHorn : function(){
-                  return this.honkMessage;
-                }
-  };
-  let truckHorn = {
-    hornMessage: "HOOONNNNKKKKK!"
-  };
-//   console.log(car.soundHorn()); // "Beep! Beep!"
-  console.log(car.soundHorn.call(truckHorn)); // "HOOONNNNKKKKK!"
+var obj = {
+  name : "Krushna"
+};
+
+var welcome = function(a,b,c){
+    return "Hello "+this.name+" welcome to "+a+" "+b+" in "+c;
+};
+console.log('\n call \n');
+console.log(welcome.call(obj,"mumbai","vashi","IND\n"));
+ 
+var obj = {name:"Krushna"};
+
+var welcome = function(a,b,c){
+    return "welcome "+this.name+" to "+a+" "+b+" in "+c;
+};
+
+var args = ["vashi","mumbai","IND"];  
+console.log(welcome.apply(obj,args));
+
+
+
+
+
+var obj = {name:"Krushna"};
+
+var welcome = function(a,b,c){
+    return "welcome "+this.name+" to "+a+" "+b+" in "+c;
+};
+
+//creates a bound function that has same body and parameters 
+var bound = welcome.bind(obj); 
+
+console.log(bound("vashi","mumabi","IND")); //call the bound function
