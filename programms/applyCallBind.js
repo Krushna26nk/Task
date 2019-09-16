@@ -28,6 +28,6 @@ var welcome = function(a,b,c){
 };
 
 //creates a bound function that has same body and parameters 
-var bound = welcome.bind(obj); 
+var bounded = welcome.bind(obj); 
 
-console.log(bound("vashi","mumabi","IND")); //call the bound function
+console.log(bounded("vashi","mumabi","IND")); //call the bound function

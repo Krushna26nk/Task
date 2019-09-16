@@ -23,6 +23,14 @@
   color: #61dafb;
 }
 
+/* Toolbar css */
+.toolbar{
+  background: white;
+}
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
